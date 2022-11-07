@@ -15,17 +15,17 @@
                 <div class="logo">
                     <a href="#"><img src="picture/logo.png" alt=""></a>
                 </div>
-                <div class="menu-icon">
+                <div class="menu-icon" onclick="menuFunction()">
                     <div class="icon">
                         <img src="picture/menu icon.png" alt="">
                     </div>
                 </div>
-                <nav class="main-menu">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">fortfolio</a>
-                        <a href="#">services</a>
-                        <a href="#">contact</a>
+                <nav class="main-menu" id="main-menu">
+                        <a href="index.html">Home</a>
+                        <a href="#about-area">About</a>
+                        <a href="#portfolio-area">fortfolio</a>
+                        <a href="#services-area">services</a>
+                        <a href="#contact-area">contact</a>
                 </nav>
             </div>
         </div>
@@ -54,7 +54,7 @@
         <!-- hero area end -->
         <!-- about area start -->
         <section>
-            <div class="about-area">
+            <div class="about-area" id="about-area">
                 <div class="container">
                     <div class="about-contant">
                         <div class="about-image">
@@ -72,7 +72,7 @@
             </div>
         </section>
         <section>
-            <div class="portfolio-area">
+            <div class="portfolio-area" id="portfolio-area">
                 <div class="container">
                     <div class="portfolio-content">
                         <div class="portfolio-heading">
@@ -129,7 +129,7 @@
             </div>
         </section>
         <section>
-            <div class="services-area">
+            <div class="services-area" id="services-area">
                 <div class="container">
                     <div class="services-heading">
                         <h4>Services</h4>
@@ -201,13 +201,13 @@
                         </div>
                         <div class="single-project" id="three">
                             <h4>50 +</h4>
-                            <h5>painding project</h5>
+                            <h5>pending project</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="contact-area">
+        <div class="contact-area" id="contact-area">
             <div class="container">
                 <div class="contact-all">
                     <div class="contact-heading">
@@ -261,6 +261,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        function menuFunction(){
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("show-menu")
+        }
+        </script>
+    
     <br><br><br>
 </body>
 </html>

@@ -56,9 +56,13 @@ header{
     width: 70px;
     height: 50px;
 }
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
 .icon img{
     width: 30px;
-    height: 20px;
+    height: 30px;
 }
 
 .main-menu a{
@@ -79,12 +83,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 30px 0;
 }
 /* about area */
 .about-contant{
     display: flex;
     align-items: center;
     padding: 0px;
+    margin: 40px 0;
 }
 .about-image{
     flex: 1;
@@ -146,6 +152,9 @@ header{
 }
 
 /* services area */
+.services-area{
+    margin-top: 40px;
+}
 .services-heading{
     text-align: center;
 }
@@ -311,4 +320,80 @@ header{
 }
 .folow-me div{
     padding-left: 20px;
+}
+
+/* footer area end */
+
+
+
+/* responsivi area */
+
+@media screen and (max-width: 991px){
+
+.menu-icon{
+    display: block;
+    }
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "l i"
+    "m m";
+}
+.logo{
+    grid-area: l;
+}
+.menu-icon{
+    grid-area: i;
+    justify-self: end;
+}
+
+.main-menu{
+    grid-area: m;
+    display: none;
+}
+.main-menu.show-menu{
+    display: block;
+}
+.main-menu a{
+    display: block;
+    text-align:right;
+}
+
+.hero-content{
+    flex-direction: column;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.hero-image img{
+    width: 100%;
+}
+
+.about-contant{
+    flex-direction: column;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.services-contant{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-content{
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+.footer-content p{
+    margin-top: 30px;
+}
+.contact-all{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 575px){
+    .container{
+        padding: 10%;
+    }
 }
