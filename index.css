@@ -144,3 +144,171 @@ header{
 .layer h5:hover{
     color: #fff;
 }
+
+/* services area */
+.services-heading{
+    text-align: center;
+}
+.services-contant{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+.single-services{
+    background: rgb(219, 219, 219);
+    text-align: center;
+    padding: 10px;
+}
+.single-services span{
+    color: blue;
+}
+
+
+/* project area */
+.project-heading{
+    text-align: center;
+    margin: 40px 0 10px 0;
+}
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.single-project{
+    text-align: center;
+    padding: 10px;
+}
+#one{
+    background: rgb(7, 178, 230);
+}
+#two{
+    background: rgb(248, 94, 225);
+}
+#three{
+    background: rgb(227, 234, 152);
+}
+
+/* contact area */
+
+.contact-all{
+    display: flex;
+    margin: 100px 0;
+}
+.contact-heading{
+    flex: 1;
+    color: rgb(0, 0, 0);
+}
+.massage-icon{
+    display: flex;
+    margin-top: 20px;
+}
+
+.massage-icon img{
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+}
+.phone-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.phone-icon img{
+    width: 30px;
+    height: 40px;
+    margin-right: 20px;
+}
+.contact-form{
+    flex: 1;
+    margin-top: 20px;
+}
+.contact-form h4{
+    color: #00c0ff;
+}
+.address{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "f l"
+    "e p"
+    "m m"
+    "s s";
+}
+#first-name{
+    grid-area: f;
+}
+#last-name{
+    grid-area: l;
+}
+#email{
+    grid-area: e;
+}
+#Phone-Number{
+    grid-area: p;
+}
+#message{
+    grid-area: m;
+}
+#submit{
+    grid-area: s;
+    color: #fff;
+    background-color: rgb(75, 80, 204);
+    cursor: pointer;
+}
+.address input{
+    padding: 10px;
+    font-size: 17px;
+    background-color: rgb(235, 229, 229);
+    color: black;
+}
+.address textarea{
+    padding: 10px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(235, 229, 229);
+    color: black;
+}
+/* contact area ent */
+
+/* footer area stare */
+.footer-content{
+    display: flex;
+    margin: 40px 0;
+    border-top: 1px solid rgb(120, 118, 118);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+.footer-content p{
+    flex: 1;
+}
+.folow-me{
+    flex: 1;
+    margin-top: 10px;
+    align-items: center;
+}
+.facebook-icon img{
+    width: 60px;
+    cursor: pointer;
+}
+.twitter-icon img{
+    width: 60px;
+    cursor: pointer;
+}
+.linkedin-icon img{
+    width: 60px;
+    cursor: pointer;
+}
+.youtube-icon img{
+     width: 60px;
+     cursor: pointer;
+
+}
+.folow-me{
+    display: flex;
+}
+.folow-me div{
+    padding-left: 20px;
+}
