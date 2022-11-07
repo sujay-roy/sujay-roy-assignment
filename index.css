@@ -11,6 +11,8 @@ font-family: 'Roboto', sans-serif; */
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
+/* basic css */
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -43,7 +45,9 @@ a.theme-button:hover{
 .container{
     padding: 0 10%;
 }
-/* header area */
+
+
+/* header area start*/
 header{
     padding: 20px 0;
 
@@ -52,6 +56,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 .logo img{
     width: 70px;
@@ -81,6 +86,7 @@ header{
 }
 /* header area end */
 
+
 /* hero area start */
 
 .hero-content{
@@ -89,7 +95,9 @@ header{
     align-items: center;
     margin: 30px 0;
 }
-/* about area */
+/* hero area end */
+
+/* about area start */
 .about-contant{
     display: flex;
     align-items: center;
@@ -104,6 +112,9 @@ header{
     flex: 1;
     margin-right: 20px;
 }
+/* about area end */
+
+
 /* portfolio area */
 .portfolio-heading{
     text-align: center;
@@ -362,7 +373,8 @@ header{
 }
 .main-menu a{
     display: block;
-    text-align:right;
+    text-align:center;
+    background: #c2d2f2;
 }
 
 .hero-content{
