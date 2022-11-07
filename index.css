@@ -107,10 +107,10 @@ header{
 
 .portfolio-image{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    grid-gap: 10px;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 30px;
     text-align: center;
     cursor: pointer;
 }
@@ -135,7 +135,7 @@ header{
     transition: all .40s;
 }
 .layer:hover{
-    background: linear-gradient( rgba(227, 182, 182, 0.5) 0%, #191919);
+    background: linear-gradient( rgba(231, 191, 191, 0.5) 0%, #191919);
 }
 
 .layer h3:hover{
