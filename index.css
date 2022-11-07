@@ -46,6 +46,7 @@ a.theme-button:hover{
 /* header area */
 header{
     padding: 20px 0;
+
 }
 .header-content{
     display: flex;
@@ -55,10 +56,12 @@ header{
 .logo img{
     width: 70px;
     height: 50px;
+    padding-left: 10px;
 }
 .menu-icon{
     display: none;
     cursor: pointer;
+    padding: 0 20px;
 }
 .icon img{
     width: 30px;
@@ -68,8 +71,9 @@ header{
 .main-menu a{
     text-decoration: none;
     color: black;
-    padding: 5px 10px;
+    padding: 5px 20px 5px 10px;
     transition: .5s;
+
 
 }
 .main-menu a:hover{
@@ -292,6 +296,7 @@ header{
 }
 .footer-content p{
     flex: 1;
+    font-size: 12px;
 }
 .folow-me{
     flex: 1;
